@@ -1,0 +1,3 @@
+# Optionnel : modèle LSTM (PyTorch). En CI/Docker : installer la version CPU
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+torch>=2.2
