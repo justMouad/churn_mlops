@@ -1,0 +1,45 @@
+{
+  "model": "logreg",
+  "comparison": {
+    "logreg": {
+      "cv_pr_auc": 0.5395655277280503,
+      "val_pr_auc": 0.5317531252714763,
+      "best_params": {
+        "clf__C": 10.0
+      }
+    },
+    "hist_gb": {
+      "cv_pr_auc": 0.5222850637543657,
+      "val_pr_auc": 0.5229506267859024,
+      "best_params": {
+        "clf__learning_rate": 0.05,
+        "clf__max_depth": 3,
+        "clf__max_iter": 150
+      }
+    }
+  },
+  "test_metrics": {
+    "roc_auc": 0.8103433161291737,
+    "pr_auc": 0.5134711630227062,
+    "precision": 0.4625228519195612,
+    "recall": 0.6340852130325815,
+    "f1": 0.5348837209302325,
+    "brier": 0.12628703758610518,
+    "threshold": 0.29,
+    "positive_rate": 0.1995
+  },
+  "threshold": 0.29,
+  "n_train": 12000,
+  "features": [
+    "tenure_months",
+    "monthly_charges",
+    "support_tickets_90d",
+    "usage_hours_30d",
+    "late_payments_6m",
+    "num_products",
+    "has_discount",
+    "age",
+    "contract_type",
+    "payment_method"
+  ]
+}
