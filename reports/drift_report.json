@@ -1,0 +1,85 @@
+{
+  "overall_status": "alert",
+  "n_features": 10,
+  "n_alert": 3,
+  "n_warning": 2,
+  "n_samples_current": 3000,
+  "n_samples_reference": 4000,
+  "retrain_recommended": true,
+  "features": {
+    "monthly_charges": {
+      "type": "numeric",
+      "psi": 0.5112,
+      "ks_pvalue": 3.6278278776379456e-127,
+      "ref_mean": 70.3530925,
+      "cur_mean": 88.44763666666665,
+      "status": "alert"
+    },
+    "support_tickets_90d": {
+      "type": "numeric",
+      "psi": 0.4285,
+      "ks_pvalue": 1.3948653592911838e-106,
+      "ref_mean": 1.198,
+      "cur_mean": 2.007,
+      "status": "alert"
+    },
+    "tenure_months": {
+      "type": "numeric",
+      "psi": 0.2814,
+      "ks_pvalue": 2.484363035844313e-56,
+      "ref_mean": 23.28825,
+      "cur_mean": 14.623,
+      "status": "alert"
+    },
+    "usage_hours_30d": {
+      "type": "numeric",
+      "psi": 0.1708,
+      "ks_pvalue": 5.390399182391707e-46,
+      "ref_mean": 60.889375,
+      "cur_mean": 50.38906666666667,
+      "status": "warning"
+    },
+    "contract_type": {
+      "type": "categorical",
+      "psi": 0.1549,
+      "status": "warning"
+    },
+    "num_products": {
+      "type": "numeric",
+      "psi": 0.0052,
+      "ks_pvalue": 0.8772075567418763,
+      "ref_mean": 2.48725,
+      "cur_mean": 2.507,
+      "status": "ok"
+    },
+    "age": {
+      "type": "numeric",
+      "psi": 0.0026,
+      "ks_pvalue": 0.7047408723537,
+      "ref_mean": 41.971,
+      "cur_mean": 42.154333333333334,
+      "status": "ok"
+    },
+    "payment_method": {
+      "type": "categorical",
+      "psi": 0.0025,
+      "status": "ok"
+    },
+    "late_payments_6m": {
+      "type": "numeric",
+      "psi": 0.0013,
+      "ks_pvalue": 0.6525364943301103,
+      "ref_mean": 0.63025,
+      "cur_mean": 0.6056666666666667,
+      "status": "ok"
+    },
+    "has_discount": {
+      "type": "numeric",
+      "psi": 0.0,
+      "ks_pvalue": 1.0,
+      "ref_mean": 0.309,
+      "cur_mean": 0.30666666666666664,
+      "status": "ok"
+    }
+  }
+}
