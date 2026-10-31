@@ -1,0 +1,12 @@
+services:
+  api:
+    build:
+      context: .
+      args:
+        WITH_LSTM: "true"     # "false" = image plus légère (Prophet seul)
+    image: churn-forecast-api:local
+    ports:
+      - "8000:8000"
+    environment:
+      ARTIFACTS_DIR: /app/artifacts
+    restart: unless-stopped
